@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Travel Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ELITE TRAVEL MANAGEMENT</h1>
+        <form>
+            <fieldset>
+                <legend>Travel Information</legend>
+                <div class="form-group">
+                    <label for="destination">Travel Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure">Date of Departure:</label>
+                    <input type="date" id="departure" name="departure" required>
+                </div>
+                <div class="form-group">
+                    <label for="arrival">Date of Arrival:</label>
+                    <input type="date" id="arrival" name="arrival" required>
+                </div>
+                <div class="form-group">
+                    <label for="kids">No. of Kids:</label>
+                    <input type="number" id="kids" name="kids" required>
+                </div>
+                <div class="form-group">
+                    <label for="teens">No. of Teens:</label>
+                    <input type="number" id="teens" name="teens" required>
+                </div>
+                <div class="form-group">
+                    <label for="adults">No. of Adults:</label>
+                    <input type="number" id="adults" name="adults" required>
+                </div>
+                <div class="form-group visa">
+                    <label>Visa Assistance:</label>
+                    <label><input type="radio" name="visa" value="yes" required> Yes</label>
+                    <label><input type="radio" name="visa" value="no" required> No</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="customer-number">Customer Number:</label>
+                    <input type="text" id="customer-number" name="customer-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Activities Performed</legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="activities" value="historic"> Historic Expo</label>
+                    <label><input type="checkbox" name="activities" value="shopping"> Shopping</label>
+                    <label><input type="checkbox" name="activities" value="culture"> Culture</label>
+                    <label><input type="checkbox" name="activities" value="relaxing"> Relaxing</label>
+                    <label><input type="checkbox" name="activities" value="beaches"> Beaches</label>
+                    <label><input type="checkbox" name="activities" value="wildlife"> Wildlife</label>
+                </div>
+            </fieldset>
+
+            <div class="submit-btn">
+                <button type="submit">Build Package</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
